@@ -1,0 +1,8 @@
+sylius_twig_hooks:
+    hooks:
+        'sylius_admin.order.show.content.sections#right':
+            admin_note:
+                component: 'app_admin:order:admin_note'
+                props:
+                    order: '@=_context.resource'
+                priority: 50

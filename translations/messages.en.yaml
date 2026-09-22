@@ -1,0 +1,4 @@
+app:
+    ui:
+        admin_note: Notatka
+        admin_note_help: Maximum 500 characters. Leave empty to remove the note.

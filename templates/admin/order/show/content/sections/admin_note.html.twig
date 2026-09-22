@@ -1,0 +1,19 @@
+{% form_theme form '@SyliusAdmin/shared/form_theme.html.twig' %}
+{% from '@SyliusAdmin/shared/helper/button.html.twig' import update %}
+
+<div class="card mb-3">
+    <div class="card-header">
+        <div class="card-title">
+            {{ 'app.ui.admin_note'|trans }}
+        </div>
+    </div>
+    <div class="card-body" {{ sylius_test_html_attribute('admin-note') }}>
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+            {{ form_errors(form) }}
+            {{ form_row(form.adminNote) }}
+            <div class="d-flex justify-content-end">
+                {{ update() }}
+            </div>
+        {{ form_end(form) }}
+    </div>
+</div>

@@ -1,0 +1,5 @@
+{% if data %}
+    <span title="{{ data }}">{{ data|u.truncate(40, '…') }}</span>
+{% else %}
+    -
+{% endif %}

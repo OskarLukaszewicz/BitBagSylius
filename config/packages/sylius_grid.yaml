@@ -1,0 +1,10 @@
+sylius_grid:
+    grids:
+        sylius_admin_order:
+            fields:
+                adminNote:
+                    type: twig
+                    label: app.ui.admin_note
+                    sortable: false
+                    options:
+                        template: 'admin/order/grid/field/admin_note.html.twig'

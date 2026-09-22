@@ -1,0 +1,4 @@
+app:
+    admin_note:
+        updated: The note has been updated.
+        update_error: The note could not be saved. It has be longer than 500 characters.
